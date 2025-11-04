@@ -131,7 +131,10 @@ body{
     margin: 0;
     line-height: 1.35;
 }
-
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
 /* Styles for the Header, Main, & Footer */
 /* Limits the width, adds a background color and padding, and centers them on the page */
 header, main, footer{
@@ -206,7 +209,9 @@ h2 {
 h3{
     display: block;
     font-size: 1.17em;
-    margin-block-start: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
@@ -273,7 +278,14 @@ input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
 input{
     height: 2rem;
 }
-
+figure{
+    display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+        unicode-bidi: isolate;
+}
 /* Fieldset Styles */
 fieldset{
     display: grid;
